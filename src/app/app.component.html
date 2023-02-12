@@ -1,9 +1,16 @@
-<h1>iBeer</h1>
+<app-header></app-header>
+
+<button (click)="sortBeers()">Par date</button>
 
 <ul>
-  <li *ngFor="let b of beer">
-    <img src="{{b.image_url}}" alt="">
-    <span>{{b.name}} : {{b.first_brewed}}</span>
-    <span>{{b.description}}</span>
+
+  <li *ngFor="let beer of beersData">
+    <img [src]="beer.image" alt="">
+    <span>{{ beer.name }}</span>
+    <span>{{ beer.first_brewed }}</span>
+    <span>{{ beer.description }}</span>
   </li>
+
 </ul>
+
+<app-footer></app-footer>

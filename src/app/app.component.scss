@@ -1,0 +1,30 @@
+img{
+    height: 390px;
+    width: 193px;
+}
+
+li{
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+}
+
+ul{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, minmax(50px,1fr));
+}
+
+button{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-right: 50%;
+}
