@@ -2,6 +2,8 @@
 
 <ul>
   <li *ngFor="let b of beer">
-    <span>{{b.name}}</span>
+    <img src="{{b.image_url}}" alt="">
+    <span>{{b.name}} : {{b.first_brewed}}</span>
+    <span>{{b.description}}</span>
   </li>
 </ul>
